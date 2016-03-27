@@ -35,8 +35,8 @@
 		})
 		.style("stroke", "black");
 
-		var vLines = svg.selectAll('vlines').data(verticalLinesData);
-		vLines.enter().append('line')
+	var vLines = svg.selectAll('vlines').data(verticalLinesData);
+	vLines.enter().append('line')
 		.attr('y1', function(d, i) {
 			 return initPoint.y1;
 		})
